@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abood Zatar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="img/watermark.png"> -->
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-container">
+          <h1 class="main-title">Abood Zatar</h1>
+        </div>
+      </a>
+      
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#main" 
+      aria-controls="main" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active  p-lg-3 " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="XO.html">Tic-Tac-Toe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-lg-3" href="gpaCalculator.html">GPA Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-lg-3" href="ageCalculator.html">Age Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-lg-3" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+</nav>
+
+    <main class="container d-flex flex-column align-items-center XO mt-5 mb-5">
+      <h1 class="mt-4">Tic Tac Toe</h1>
+  
+      <!-- Tic-Tac-Toe game board -->
+      <table class="game-board">
+        <tr>
+          <td class="cell" id="cell-0"></td>
+          <td class="cell" id="cell-1"></td>
+          <td class="cell" id="cell-2"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-3"></td>
+          <td class="cell" id="cell-4"></td>
+          <td class="cell" id="cell-5"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="cell-6"></td>
+          <td class="cell" id="cell-7"></td>
+          <td class="cell" id="cell-8"></td>
+        </tr>
+      </table>
+  
+      <!-- Game result and score -->
+      <div class="mt-4 text-center result">
+        <p id="result-text"></p>
+        <p id="score-text"></p>
+      </div>
+  
+      <!-- Reset button -->
+      <button id="reset-button" class="btn rounded-pill main-btn">Reset Game</button>
+    </main>
+  
+
+    <div class="footer pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+            <img src="img/Wix Logo Maker - Google Chrome 7_19_2023 6_19_40 PM (2).png" alt="LOGO" class="img-fluid mb-5">     
+            <div class="copyright text-white-50">Created By <span class="fw-bold">Abood Zatar</span><div>&copy; Copyright 2025 - Abood Zatar</div></div>
+          </div>
+  
+          <div class="col-lg-2 col-md-3 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+            <h5 class="mb-3 footer-heading">My Projects</h5>
+            <div class="links">
+            <ul class="list-unstyled footer-link">
+              <!-- Here -->
+              <li><a target="_blank" class="text-white-50" href="https://link.me/nonerds?fbclid=PAY2xjawIRveBleHRuA2FlbQIxMQABpg0c1J0vofhoIGmOvmOTJ8Hu2ivqQTHeNoVGdncwT39ikH66RDFFmVKhfg_aem_07OgDC_1xbTXbmJU_cUlGg">Data Structurse Course</a></li>
+              <li><a target="_blank" class="text-white-50" href="https://link.me/nonerds?fbclid=PAY2xjawIRveBleHRuA2FlbQIxMQABpg0c1J0vofhoIGmOvmOTJ8Hu2ivqQTHeNoVGdncwT39ikH66RDFFmVKhfg_aem_07OgDC_1xbTXbmJU_cUlGg">OOP Course</a></li>
+              <li><a class="text-white-50" href="soon.html">Spanish Learning Website</a></li>
+              <li><a class="text-white-50" href="soon.html">Games</a></li>
+              <li><a class="text-white-50" href="soon.html">Application (Flutter)</a></li>
+              <li><a class="text-white-50" href="soon.html">iTeam Website</a></li>
+
+            </ul>
+            </div>
+          </div>
+  
+         
+  
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center text-lg-start text-md-start">
+            <h5 id="contact" class="mb-3 footer-heading">Contact Me</h5>
+            <p class="text-white-50 lh-lg">I'm always excited to connect and collaborate! Whether you have a project idea, a question, or just want to say hello, feel free to reach out. Drop me a message, and I'll get back to you as soon as possible!</p>
+            
+          </div> 
+
+
+          <div class="col-lg-2 col-md-3 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+            <ul class="brands d-flex flex-row mt-5 list-unstyled gap-3">
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.youtube.com/@a.zforprograming">
+                      <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.instagram.com/abood.zatar.292">
+                      <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.facebook.com/abood.zatae">
+                      <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.linkedin.com/in/abood-zatar-181872254/">
+                      <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                  </a>
+              </li>
+    </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      let currentPlayer = 'X';
+let gameOver = false;
+let score = { X: 0, O: 0 };
+
+// Get all cell elements
+const cells = document.querySelectorAll('.cell');
+
+// Add event listener to each cell
+cells.forEach((cell, index) => {
+    cell.addEventListener('click', () => {
+        if (gameOver) return;
+        if (cell.textContent !== '') return;
+
+        // Update cell text
+        cell.textContent = currentPlayer;
+
+        // Check for win
+        if (checkWin()) {
+            gameOver = true;
+            score[currentPlayer]++;
+            updateScore();
+            setTimeout(() => {
+              document.getElementById('result-text').textContent = `${currentPlayer} wins!`;
+            }, 100);
+        } else {
+            // Switch player
+            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        }
+    });
+});
+
+// Check for win
+function checkWin() {
+    const winConditions = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+
+    for (let i = 0; i < winConditions.length; i++) {
+        const [a, b, c] = winConditions[i];
+        if (cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent && cells[a].textContent !== '') {
+            return true;
+        }
+    }
+    return false;
+}
+
+// Update score
+function updateScore() {
+    document.getElementById('score-text').innerHTML = `X wins: ${score.X} </br>  O wins: ${score.O}`;
+}
+
+// Reset game
+function resetGame() {
+    gameOver = false;
+    currentPlayer = 'X';
+    cells.forEach(cell => cell.textContent = '');
+    document.getElementById('result-text').textContent = ``;
+
+}
+
+// Add event listener to reset button
+document.getElementById('reset-button').addEventListener('click', resetGame);
+    </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abood Zatar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="img/watermark.png"> -->
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-container">
+          <h1 class="main-title">Abood Zatar</h1>
+        </div>
+      </a>
+      
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#main" 
+      aria-controls="main" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active  p-lg-3 " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-lg-3" href="XO.html">Tic-Tac-Toe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-lg-3" href="gpaCalculator.html">GPA Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-lg-3" href="ageCalculator.html">Age Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  p-lg-3" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+</nav>
+
+    <main class="container mb-5 age mt-5">
+        <div class="container mt-5">
+            <h1 class="text-center mb-5">Age Calculator</h1>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <form id="age-form">
+                        <div class="mb-3">
+                            <label for="birthDate" class="form-label labelage mb-3">Enter your birth date:</label>
+                            <input type="date" id="birthDate" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn main-btn rounded-pill">Calculate Age</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <h3 id="ageResult">Result : You are <span class="num">0</span>  years, <span class="num">0</span> months, and <span class="num">0</span> days old.</h3>
+                    <p id="ageResult"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="footer pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+            <img src="img/Wix Logo Maker - Google Chrome 7_19_2023 6_19_40 PM (2).png" alt="LOGO" class="img-fluid mb-5">     
+            <div class="copyright text-white-50">Created By <span class="fw-bold">Abood Zatar</span><div>&copy; Copyright 2025 - Abood Zatar</div></div>
+          </div>
+  
+          <div class="col-lg-2 col-md-3 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+            <h5 class="mb-3 footer-heading">My Projects</h5>
+            <div class="links">
+            <ul class="list-unstyled footer-link">
+              <!-- Here -->
+              <li><a target="_blank" class="text-white-50" href="https://link.me/nonerds?fbclid=PAY2xjawIRveBleHRuA2FlbQIxMQABpg0c1J0vofhoIGmOvmOTJ8Hu2ivqQTHeNoVGdncwT39ikH66RDFFmVKhfg_aem_07OgDC_1xbTXbmJU_cUlGg">Data Structurse Course</a></li>
+              <li><a target="_blank" class="text-white-50" href="https://link.me/nonerds?fbclid=PAY2xjawIRveBleHRuA2FlbQIxMQABpg0c1J0vofhoIGmOvmOTJ8Hu2ivqQTHeNoVGdncwT39ikH66RDFFmVKhfg_aem_07OgDC_1xbTXbmJU_cUlGg">OOP Course</a></li>
+              <li><a class="text-white-50" href="soon.html">Spanish Learning Website</a></li>
+              <li><a class="text-white-50" href="soon.html">Games</a></li>
+              <li><a class="text-white-50" href="soon.html">Application (Flutter)</a></li>
+              <li><a class="text-white-50" href="soon.html">iTeam Website</a></li>
+
+            </ul>
+            </div>
+          </div>
+  
+         
+  
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center text-lg-start text-md-start">
+            <h5 id="contact" class="mb-3 footer-heading">Contact Me</h5>
+            <p class="text-white-50 lh-lg">I'm always excited to connect and collaborate! Whether you have a project idea, a question, or just want to say hello, feel free to reach out. Drop me a message, and I'll get back to you as soon as possible!</p>
+            
+          </div> 
+
+
+          <div class="col-lg-2 col-md-3 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+            <ul class="brands d-flex flex-row mt-5 list-unstyled gap-3">
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.youtube.com/@a.zforprograming">
+                      <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.instagram.com/abood.zatar.292">
+                      <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.facebook.com/abood.zatae">
+                      <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                  </a>
+              </li>
+              <li>
+                  <a target="_blank" class="d-block text-dark" href="https://www.linkedin.com/in/abood-zatar-181872254/">
+                      <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                  </a>
+              </li>
+    </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function calculateAge(birthDate) {
+            const today = new Date();
+            const birth = new Date(birthDate);
+            
+            let years = today.getFullYear() - birth.getFullYear();
+            let months = today.getMonth() - birth.getMonth();
+            let days = today.getDate() - birth.getDate();
+
+            if (days < 0) {
+                months--;
+                days += new Date(today.getFullYear(), today.getMonth(), 0).getDate(); 
+            }
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            return { years, months, days };
+        }
+        document.getElementById('age-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const birthDate = document.getElementById('birthDate').value;
+            if (birthDate) {
+                const { years, months, days } = calculateAge(birthDate);
+                document.getElementById('ageResult').innerHTML = `Result : You are <span class="num">${years}</span>  years, <span class="num">${months}</span> months, and <span class="num">${days}</span> days old.`;
+            } else {
+                document.getElementById('ageResult').innerText = "Please select a valid birth date.";
+            }
+        });
+    </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

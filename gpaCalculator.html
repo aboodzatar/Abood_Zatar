@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abood Zatar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="img/watermark.png"> -->
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <div class="logo-container">
+              <h1 class="main-title">Abood Zatar</h1>
+            </div>
+          </a>
+          
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#main" 
+          aria-controls="main" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <i class="navbar-toggler-icon"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active  p-lg-3 " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="XO.html">Tic-Tac-Toe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-lg-3" href="gpaCalculator.html">GPA Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-lg-3" href="ageCalculator.html">Age Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  p-lg-3" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+
+    <main class="container gpa-main mb-5">
+        <h2 class="mb-5 text-center">Calculate your GPA</h2>
+        <div class="mt-4 d-flex align-content-center mb-5 in-gpa">
+            <div class="mb-3">
+                <label class="mb-3" for="lastGpa"> All GPA: </label>
+                <input max="4.00" type="number" step="0.01" id="lastGpa" name="lastGpa" class="form-control d-inline ms-2" />
+            </div>
+            <div>
+                <label class="mb-3" for="lastFullHours" class="ml-5"> All Hours: </label>
+                <input type="number" id="lastFullHours" name="lastFullHours" class="form-control d-inline ms-2" />
+            </div>
+        </div>
+    
+        <div class="mt-4 mb-5">
+            <label for="numOfSubject">Number of Subjects : </label>
+            <input type="number" id="numOfSubject" name="numOfSubject" min="1" max="20" value="5" class="form-control w-25 d-inline" />
+            <button type="button" class="btn main-btn ml-5 ms-2" onclick="generate()">Generate</button>
+        </div>
+    
+        <div class="row addCardsHere mt-4">
+
+        </div>
+    
+        <div class="mt-4">
+            <button type="button" class="btn main-btn ps-3 pe-3" id="calculateButton" onclick="calculate()">Calculate</button>
+        </div>
+    </main>
+    
+<div id="myModal" class="modal2">
+    <div class="modal-content2">
+        <span class="close2">&times;</span>
+        <p id="gpaResult"></p>
+        <div>
+            <button class="btn btn-primary" id="confirmYes2">Ok</button>
+        </div>
+    </div>
+</div>
+
+<div class="footer pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+          <img src="img/Wix Logo Maker - Google Chrome 7_19_2023 6_19_40 PM (2).png" alt="LOGO" class="img-fluid mb-5">     
+          <div class="copyright text-white-50">Created By <span class="fw-bold">Abood Zatar</span><div>&copy; Copyright 2025 - Abood Zatar</div></div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+          <h5 class="mb-3 footer-heading">My Projects</h5>
+          <div class="links">
+          <ul class="list-unstyled footer-link">
+            <!-- Here -->
+            <li><a target="_blank" class="text-white-50" href="https://link.me/nonerds?fbclid=PAY2xjawIRveBleHRuA2FlbQIxMQABpg0c1J0vofhoIGmOvmOTJ8Hu2ivqQTHeNoVGdncwT39ikH66RDFFmVKhfg_aem_07OgDC_1xbTXbmJU_cUlGg">Data Structurse Course</a></li>
+            <li><a target="_blank" class="text-white-50" href="https://link.me/nonerds?fbclid=PAY2xjawIRveBleHRuA2FlbQIxMQABpg0c1J0vofhoIGmOvmOTJ8Hu2ivqQTHeNoVGdncwT39ikH66RDFFmVKhfg_aem_07OgDC_1xbTXbmJU_cUlGg">OOP Course</a></li>
+            <li><a class="text-white-50" href="soon.html">Spanish Learning Website</a></li>
+            <li><a class="text-white-50" href="soon.html">Games</a></li>
+            <li><a class="text-white-50" href="soon.html">Application (Flutter)</a></li>
+            <li><a class="text-white-50" href="soon.html">iTeam Website</a></li>
+
+          </ul>
+          </div>
+        </div>
+
+       
+
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center text-lg-start text-md-start">
+          <h5 id="contact" class="mb-3 footer-heading">Contact Me</h5>
+          <p class="text-white-50 lh-lg">I'm always excited to connect and collaborate! Whether you have a project idea, a question, or just want to say hello, feel free to reach out. Drop me a message, and I'll get back to you as soon as possible!</p>
+          
+        </div> 
+
+
+        <div class="col-lg-2 col-md-3 col-sm-12 mb-5 text-center text-lg-start text-md-start">
+          <ul class="brands d-flex flex-row mt-5 list-unstyled gap-3">
+            <li>
+                <a target="_blank" class="d-block text-dark" href="https://www.youtube.com/@a.zforprograming">
+                    <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" class="d-block text-dark" href="https://www.instagram.com/abood.zatar.292">
+                    <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" class="d-block text-dark" href="https://www.facebook.com/abood.zatae">
+                    <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" class="d-block text-dark" href="https://www.linkedin.com/in/abood-zatar-181872254/">
+                    <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+            </li>
+  </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    <script>
+        const grades = {
+            "A": 4.0,
+            "A-": 3.75,
+            "B+": 3.5,
+            "B": 3.0,
+            "B-": 2.75,
+            "C+": 2.5,
+            "C": 2.0,
+            "C-": 1.75,
+            "D+": 1.5,
+            "D": 1.25,
+            "D-": 1.0,
+            "F": 0.5
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            generate();
+        });
+
+        function generate() {
+        const container = document.querySelector('.addCardsHere');
+        container.innerHTML = '';
+        let numOfSubject = document.getElementById('numOfSubject').value > 20 ? 20 : document.getElementById('numOfSubject').value;
+        if(numOfSubject <= 0)
+            numOfSubject = 5;
+        for (let i = 1; i <= numOfSubject; i++) {
+            const card = document.createElement('div');
+            card.className = 'col-12 col-sm-6 col-md-4 col-lg-4';
+            card.innerHTML = `
+                            <div class="card cardGPA pt-3 pb-3 mb-4">
+                            <h4 class="text-center card-title fs-4 fw-bold">Subject ${i}</h4>
+                            <div class="card-body">
+                                <div class="row mb-2">
+                                    <div class="col-6">
+                                        <label for="grade-${i}">Grade:</label>
+                                        <select id="grade-${i}" name="grade-${i}" class="form-control">
+                                            ${Object.keys(grades).map(grade => `<option value="${grade}">${grade}</option>`).join('')}
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="hours-${i}">Hours:</label>
+                                        <select id="hours-${i}" name="hours-${i}" class="form-control">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3" selected>3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-2 mt-3">
+                                    <div class="col-12 card-question">
+                                        <label class="card-question">Did you repeat this course?</label>
+                                        <div>
+                                            <input type="radio" id="restudied-yes-${i}" name="restudied-${i}" value="yes" onclick="toggleLastGrade(${i}, true)"> 
+                                            <label for="restudied-yes-${i}">Yes</label>
+
+                                            <input type="radio" id="restudied-no-${i}" name="restudied-${i}" value="no" onclick="toggleLastGrade(${i}, false)" checked> 
+                                            <label for="restudied-no-${i}">No</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2 hidden last-grade" id="last-grade-container-${i}">
+                                    <div class="col-12">
+                                        <label class="mb-4" for="last-grade-${i}">What is the last grade?</label>
+                                        <select id="last-grade-${i}" name="last-grade-${i}" class="form-control fw-bold">
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="C-">C-</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                            <option value="D-">D-</option>
+                                            <option value="F">F</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+            container.appendChild(card);
+        }
+    }
+
+    
+    function toggleLastGrade(subjectIndex, show) {
+        const container = document.getElementById(`last-grade-container-${subjectIndex}`);
+        if (show) {
+            container.classList.remove('hidden');
+        } else {
+            container.classList.add('hidden');
+        }
+    }
+
+    function calculate() {
+        let numOfSubject = document.getElementById('numOfSubject').value > 20 ? 20 : document.getElementById('numOfSubject').value;
+        let lastGpa = parseFloat(document.getElementById('lastGpa').value) || 0;
+
+        if(lastGpa > 4)
+            lastGpa = 4;
+        else if (lastGpa < 0)
+            lastGpa = 0;
+        
+        let lastFullHours = parseInt(document.getElementById('lastFullHours').value) || 0;
+        if(numOfSubject <= 0)
+            numOfSubject = 5;
+        if(lastGpa < 0)
+            lastGpa = 0;
+
+        if (lastFullHours < 0)
+            lastFullHours = 0;
+
+        let totalPoints = lastGpa * lastFullHours;
+        let totalHours = lastFullHours;
+        let points = 0;
+        let hour = 0;
+
+        for (let i = 1; i <= numOfSubject; i++) {
+            const grade = document.getElementById(`grade-${i}`).value;
+            const hours = parseInt(document.getElementById(`hours-${i}`).value);
+            const isRestudied = document.querySelector(`input[name="restudied-${i}"]:checked`).value === "yes";
+
+            if (isRestudied) {
+                const lastGrade = document.getElementById(`last-grade-${i}`).value;
+                totalPoints -= grades[lastGrade] * hours;
+                totalHours -= hours;
+            }
+            points += grades[grade] * hours;
+            hour += hours;
+            totalPoints += grades[grade] * hours;
+            totalHours += hours;
+        }
+
+        const allGpa = totalPoints / totalHours;
+        const thisSemesterGpa = points / hour;
+
+        document.getElementById('gpaResult').innerText = `Your GPA is ${allGpa.toFixed(2)}\nThis semester GPA is ${thisSemesterGpa.toFixed(2)}`;
+        const modal = document.getElementById('myModal');
+        modal.style.display = "flex";
+    }
+
+    var modal = document.getElementById("myModal");
+
+    var span = document.getElementsByClassName("close2")[0];
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    document.getElementById("confirmYes2").onclick = function () {
+        modal.style.display = "none";
+    }
+
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

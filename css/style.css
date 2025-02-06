@@ -1,0 +1,409 @@
+:root {
+    --dark : #222020;
+    --light-dark : #323232;
+    --dark-green : #0D7377;
+    --light-green:#16b8aa;
+    --blk : black;
+    --wit : white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--light-dark);
+}
+
+.main-btn {
+    background-color: var(--dark);
+    color: var(--wit) !important;
+}
+
+.main-btn:hover {
+    color: var(--dark-green) !important;
+    background-color: var(--dark);
+}
+
+
+
+/* START NAVBAR STYLE */
+.navbar {
+    background-color: var(--dark);
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, .3);
+    position: sticky;
+}
+
+.navbar a img {
+    height: 4rem;
+    width: 5.5rem;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .logo-container {
+    background: radial-gradient(circle,rgba(0,0,0,1) 10%, var(--dark) 70% );
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    /*transition: background 0.3s ease-in-out;*/
+}
+
+.navbar .logo-container:hover{
+    background: radial-gradient(circle,rgba(0,0,0,1) 20%, var(--dark) 90%);
+}
+
+.navbar .main-title {
+    font-size: 1.4rem;
+}
+
+.navbar a {
+    color: var(--wit);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.0);
+}
+
+.navbar a:hover {
+    color: var(--light-green);
+    transform: scale(1.1);
+}
+
+.active {
+    color: var(--dark) !important;
+}
+
+/* END NAVBAR STYLE */
+
+
+.white-hr {
+    border: none; 
+    height: 3px; 
+    background-color: var(--wit); 
+    margin: 20px 0;
+}
+
+/* START DISC */
+
+.disc .main-text{
+    color: var(--light-green);
+    font-weight: 700;
+
+}
+
+.disc .subtitle-text {
+    color: var(--dark-green);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+.disc .left-side {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.disc .left-side img{
+    border-radius: 50%;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+
+}
+.disc .right-side {
+    background-color: var(--light-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+
+/* END DISC */
+
+/* START FOOTER */
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer-heading {
+    color:var(--light-green);
+}
+.footer img {
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.footer .copyright >span {
+    color: var(--light-green);
+}
+
+
+.footer .links {
+    line-height: 300%;
+}
+
+.footer .links a{
+    text-decoration: none;
+}
+
+.footer .brands {
+    font-size: 1.5rem;
+}
+
+.youtube {
+    color: #FF0000;
+}
+
+.facebook {
+    color: #1877F2;
+}
+
+.instagram {
+    color: #e5229a;
+}
+
+.linkedin {
+    color: #0A66C2;
+}
+/* END FOOTER */
+
+/* START GPA MAIN */
+.gpa-main {
+    margin-top: 7rem;
+    background-color: var(--light);
+    color: var(--light-green);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.gpa-main .in-gpa {
+    flex-direction: row;
+}
+.gpa-main .in-gpa div{
+    margin-right: 5rem;
+}
+
+
+/* For phones (up to 600px wide) */
+@media (max-width: 600px) {
+    .gpa-main {
+        font-size: 0.8rem;
+    }
+    .gpa-main .in-gpa {
+        flex-direction: column;
+    }
+    .gpa-main .in-gpa input {
+        height: 2rem;
+        width: 70%;
+    }
+}
+
+/* For tablets (601px to 768px wide) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .gpa-main {
+        font-size: 1.2rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+/* The Modal (background) */
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Close Button */
+.close2 {
+    color: #aaa;
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close2:hover,
+    .close2:focus {
+        color: black;
+        text-decoration: none;
+    }
+
+#confirmYes2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cardGPA {
+    position: relative;
+    background-color: var(--dark); /* or any other background color */
+    padding: 20px; /* Optional padding for the card */
+    border: 1px solid #ccc; /* Optional border for the card */
+    border-radius: 15px; /* Optional border radius for the card */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* The blur effect */
+}
+
+.cardGPA .card-question {
+    color: var(--wit);
+    font-weight: 700;
+}
+
+.cardGPA .last-grade {
+    background-color: var(--light-dark);
+    padding: 1rem;
+    border-radius: 10%;
+    color: var(--dark-green);
+}
+/* END GPA MAIN */
+
+ /*START XO*/
+ .XO h1{
+    color: var(--light-green);
+ }
+
+  /* Custom styles for the game */
+  .game-board {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .game-board td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 48px;
+    border: 5px solid var(--dark-green);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: var(--light-green);
+  }
+
+  .game-board td:hover {
+    background-color: #f1f1f1;
+  }
+
+  #reset-button {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .game-board td {
+      width: 80px;
+      height: 80px;
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .game-board td {
+      width: 60px;
+      height: 60px;
+      font-size: 28px;
+    }
+  }
+
+  .XO .result {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-green);
+  }
+ /*END XO*/
+
+
+ .age h1{
+    color: var(--light-green);
+ }
+
+ .age h3{
+    color: var(--blk);
+    font-weight: 600;
+ }
+.num {
+    color: var(--light-green);
+}
+
+.labelage {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+
+
+/*START PROJECTS*/
+.projects {
+    background-color: var(--light-dark);
+}
+
+.projects h2 {
+    color: var(--light-green);
+}
+
+.projects h3 {
+    color: var(--light-green);
+}
+
+.projects ol li {
+    color: var(--dark-green);
+}
+
+
+
+/*END PROJECTS*/
+
+.soon {
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+    color: var(--light-green);
+} 
